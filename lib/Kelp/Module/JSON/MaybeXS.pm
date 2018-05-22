@@ -6,12 +6,12 @@ use JSON::MaybeXS;
 sub build {
   my ($self, %args) = @_;
 
-  my $json = JSON->new();
-  $json->$_($args{$_}) for keys %args;
+  my $json_obj = JSON()->new();
+  $json_obj->$_($args{$_}) for keys %args;
   
   $self->register(
-    json => $json
+    json => $json_obj
   );
 }
 
-1;
+1
