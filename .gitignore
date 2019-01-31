@@ -2,3 +2,4 @@
 .DS_Store
 .vstags
 local
+cpanfile.snapshot
