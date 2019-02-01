@@ -2,6 +2,11 @@ Revision history for Perl extension Kelp-Module-JSON-MaybeXS
 
 {{$NEXT}}
 
+0.03 2019-02-01T21:43:00Z
+
+    - Don't do anything we don't have to
+    - Fix for a failing test
+
 0.02 2019-02-01T03:51:57Z
 
     - Require and make module compatible with Perl 5.10

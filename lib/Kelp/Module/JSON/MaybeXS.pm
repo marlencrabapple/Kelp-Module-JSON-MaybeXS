@@ -5,19 +5,15 @@ use v5.10;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Kelp::Base 'Kelp::Module';
 use JSON::MaybeXS;
 
 sub build {
   my $self = shift;
-  my %args = scalar @_ == 1 ? %{@_} : @_;
-
-  my $json_obj = JSON()->new;
-  $json_obj->$_($args{$_}) for keys %args;
-  
-  $self->register( json => $json_obj )
+  my $json = JSON::MaybeXS->new(@_);
+  $self->register( json => $json )
 }
 
 1

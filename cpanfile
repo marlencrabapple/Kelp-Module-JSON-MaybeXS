@@ -7,6 +7,6 @@ on 'test' => sub {
   requires 'Test::More', '0.98';
 };
 
-feature 'cpanel-json-xs' => sub {
+feature 'cpanel_json_xs' => sub {
   requires 'Cpanel::JSON::XS', '4.08';
 }
