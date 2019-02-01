@@ -67,9 +67,14 @@
    },
    "release_status" : "unstable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/marlencrabapple/Kelp-Module-JSON-MaybeXS/issues"
+      },
+      "homepage" : "https://github.com/marlencrabapple/Kelp-Module-JSON-MaybeXS",
       "repository" : {
          "type" : "git",
-         "url" : "git://bitbucket.org/marlencrabapple/kelp-module-json-maybexs.git"
+         "url" : "git://github.com/marlencrabapple/Kelp-Module-JSON-MaybeXS.git",
+         "web" : "https://github.com/marlencrabapple/Kelp-Module-JSON-MaybeXS"
       }
    },
    "version" : "0.01",
