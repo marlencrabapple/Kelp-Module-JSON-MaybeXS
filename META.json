@@ -56,7 +56,7 @@
          "requires" : {
             "JSON::MaybeXS" : "1.004000",
             "Kelp" : "1.02",
-            "perl" : "5.008001"
+            "perl" : "v5.10.0"
          }
       },
       "test" : {

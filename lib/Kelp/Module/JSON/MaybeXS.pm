@@ -1,6 +1,6 @@
 package Kelp::Module::JSON::MaybeXS;
 
-use 5.008001;
+use v5.10;
 
 use strict;
 use warnings;
@@ -12,7 +12,7 @@ use JSON::MaybeXS;
 
 sub build {
   my $self = shift;
-  my %args = scalar @_ == 1 ? @_->%* : @_;
+  my %args = scalar @_ == 1 ? %{@_} : @_;
 
   my $json_obj = JSON()->new;
   $json_obj->$_($args{$_}) for keys %args;

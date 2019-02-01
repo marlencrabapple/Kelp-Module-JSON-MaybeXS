@@ -1,4 +1,4 @@
-requires 'perl', '5.008001';
+requires 'perl', '5.010_000';
 
 requires 'JSON::MaybeXS', '1.004000';
 requires 'Kelp', '1.02';
